@@ -22,7 +22,7 @@ Web과 Node.JS는 서로 협력적인 관계이기 때문에 두 가지를 제�
 4. Single Thread
 
 
-### module 불러오기 (출처:[node.js](https://nodejs.org/api/modules.html))
+### module 불러오기 (출처: [node.js](https://nodejs.org/api/modules.html))
 
 만약 main.js 파일에서 *circle.js*라는 파일을 불러오려면
 

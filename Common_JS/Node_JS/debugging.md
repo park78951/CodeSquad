@@ -8,7 +8,7 @@ Javascript 개발에 사용하는 Tool로 VS Code와 Chrome Dev Tool을 위주�
 
 
 
-#### Chrome Dev Tools로 디버깅하기 (출처:[Google Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=ko))
+#### Chrome Dev Tools로 디버깅하기 (출처: [Google Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=ko))
 
 VS Code로도 디버깅을 연습해 봤지만, Chrom Dev Tools이 기능이 다양한 것 같아 Chrome으로 적었다.
 
@@ -57,8 +57,9 @@ var label = document.querySelector('p');
 var button = document.querySelector('button');
 button.addEventListener('click', onClick);
 ```
+
 ![bug1](https://user-images.githubusercontent.com/37759759/55609848-a712b500-57bc-11e9-8c5c-06a3fa13e736.png)
-(출처:[Google Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=ko))
+(출처: [Google Dev Tools](https://developers.google.com/web/tools/chrome-devtools/javascript/?hl=ko))
 
 위의 코드에서 5와 1을 넣었을 때 6이여야 하지만 51로 나와 이를 디버그 하는 예시를 보여주었다.
 
@@ -74,14 +75,15 @@ Chrome Dev Tools로 Debugging을 할 시 아래와 같이 진행한다.
 ### 추가 기능 및 정의
 
 #### breack points
-    - debugging을 위해 해당부분을 중지시키기 위한 중단점. 함수 실행 중 break points 에서 멈추게 된다.
+  - debugging을 위해 해당부분을 중지시키기 위한 중단점. 함수 실행 중 break points 에서 멈추게 된다.
 
 #### Watch
-    - +를 눌러 변수명을 입력하면 debugging 중 해당 변수가 정의된 시점을 지날 시 watch에 해당 변수명의 값이 출력된다. (일반 editor 창에도 값이 뜬다.)
+  - +를 눌러 변수명을 입력하면 debugging 중 해당 변수가 정의된 시점을 지날 시 watch에 해당 변수명의 값이 출력된다. (일반 editor 창에도 값이 뜬다.)
 
 #### call stack
-    - 함수 내부의 함수가 계속 호출된다면 계속 call stack에 함수가 위치하게 되고 가장 늦게 호출될 수록 가장 상단에 위치하게 된다. 이 후 함수가 하나씩 완료될 때 마다 함수는 call stack에서 제거되게 되고, 함수의 호출을 차례대로 수행하는 역할을 한다.
-    아래는 call stack을 초과했을 경우 overflow된 예시이다.
+  - 함수 내부의 함수가 계속 호출된다면 계속 call stack에 함수가 위치하게 되고 가장 늦게 호출될 수록 가장 상단에 위치하게 된다. 이 후 함수가 하나씩 완료될 때 마다 함수는 call stack에서 제거되게 되고, 함수의 호출을 차례대로 수행하는 역할을 한다.
+  아래는 call stack을 초과했을 경우 overflow된 예시이다.
+
 ![maximum-call-stack](https://user-images.githubusercontent.com/37759759/55610982-25705680-57bf-11e9-8be6-1629967d1e01.png)
 (출처: [캡틴판교 블로그](https://joshua1988.github.io/web-development/translation/javascript/how-js-works-inside-engine/))
 
