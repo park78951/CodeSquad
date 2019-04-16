@@ -79,8 +79,8 @@ const datas = [{
 	}]
 }]
 
-const seekSK = (dataArray) => {
-    dataArray.forEach( object => {
+const seekSK = (dataList) => {
+    dataList.forEach( object => {
         if(object.type === "sk") {
             nameCollect.push(object.name);
         }

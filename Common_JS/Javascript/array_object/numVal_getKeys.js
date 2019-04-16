@@ -26,22 +26,21 @@ const datas = {
 }
 
 const getElementNumberValue = (object) => {
-    let dataArray = [];
-    let resultArray = [];
+    let dataList = [];
+    let keysOfNumberValue = [];
     for(key in object) {
         if(typeof object[key] === "object") {
-            dataArray.push(object[key]);
+            dataList.push(object[key]);
         }
     }
-    dataArray.forEach( dataObjects => {
+    dataList.forEach( dataObjects => {
         for(key in dataObjects) {
             if(typeof dataObjects[key] === "number") {
-                resultArray.push(key);
+                keysOfNumberValue.push(key);
             }
         }
     });
-    console.log(resultArray);
-    return resultArray;
+    return keysOfNumberValue;
 }
 
-getElementNumberValue(datas);
+console.log(getElementNumberValue(datas));
