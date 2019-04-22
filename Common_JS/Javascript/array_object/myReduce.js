@@ -9,13 +9,11 @@ const myReducer = (array, callback, initialValue) => {
     }
     
     // 초기값이 설정되지 않았을 때
-    if(initialValue === undefined) {
-        let value = array[0];
-        for(let i = 1; i < array.length; i++) {
-            value = callback(value, array[i], array); 
-        }
-        return value;
+    let value = array[0];
+    for(let i = 1; i < array.length; i++) {
+        value = callback(value, array[i], array); 
     }
+    return value;
 
 }
 
